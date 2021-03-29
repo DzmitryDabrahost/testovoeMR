@@ -19,7 +19,7 @@ document.oninput = function changeInput() {
 // API data retrieval
 
 async function getJSONAsync(url) {
-    let response = await fetch("http://cors-anywhere.herokuapp.com/" + url);
+    let response = await fetch("https://cors-anywhere.herokuapp.com/" + url);
     if (response.ok) {
         dataToAPI = await response.json();
         return dataToAPI;
